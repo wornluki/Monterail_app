@@ -1,0 +1,145 @@
+
+img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+hr {
+  border: 1px solid $darken_gray;
+  margin: 5px 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+li {
+  padding: 5px 0;
+}
+
+.questions {
+  
+  width: fit-content;
+  position: relative;
+  @media (max-width: $tablet-breakout) {
+    width: calc(100% - 40px);
+    margin: 0 20px 0 20px; 
+  }
+  @media (max-width: $phone-breakout) {
+    width: 100%;
+    margin: 0;
+   	padding: 0;
+  }
+}
+
+.question {
+	//margin-top: 50px;
+	background-color: $accent-color;
+}
+
+.question_person {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  height: 80px;
+  .text {
+    padding-left: 20px;
+  }
+}
+
+.question_body {
+  display: flex;
+  background-color: $base-color;
+  width: 100%;
+}
+
+.answers {
+  display: flex;
+  .more {
+    margin-left: 20px;
+    background-color: $base-color !important;
+    @media (max-width: $phone-breakout) {
+    	margin-left: 5px;
+    }
+  }
+
+
+  .answer {
+    flex: 1 16.666667%;
+    margin-right: 20px;
+    margin-top: 20px;
+    padding: 20px 10px 10px 10px;
+    display: flex;
+    position: relative;
+    background-color: $gray;
+    height: 180px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    	
+    @media (max-width: $phone-breakout) {
+      margin-right: 5px;
+      margin-top: 5px;
+      padding: 10px;
+    }
+    @media (max-width: $tablet-breakout) {
+      &:nth-child(n+4) {
+        display: none;    
+      }
+    }
+    @media (max-width: $phone-breakout) {
+      &:nth-child(n+4) {
+        display: none;
+      }    
+    }
+  }
+
+  .bottom:after {
+
+	content: "\2022";
+	//margin-bottom: -38%;
+	position: absolute;
+	bottom: -0.6em;
+	font-size: 2em;
+	margin-left: -8px;
+	color: $darken_gray;
+  }
+}
+
+.asked {
+  background-color: $accent-color;
+  padding: 20px;
+  display: flex;
+  align-items: flex-end;
+  @media (max-width: $phone-breakout) {
+    display: none;
+  }
+    
+}
+
+.question_additional__info {
+  position: absolute;
+  width: 100%;
+  top: 80px;
+  padding: 20px;
+  margin-left: 20px;
+  //backgoud-color: $base-color;
+  @media (max-width: $tablet-breakout) {
+    position: abolute;
+    width: auto;
+    float: right;
+    top: 80px;
+    right: 0;
+    
+  }
+}

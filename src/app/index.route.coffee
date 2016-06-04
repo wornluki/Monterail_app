@@ -6,6 +6,11 @@ angular.module 'monterailApp'
         url: '/'
         templateUrl: 'app/main/main.html'
         controller: 'MainController'
-        controllerAs: 'main'
+        controllerAs: 'vm'
+      .state 'question',
+        url: '/question'
+        templateUrl: 'app/question/question.html'
+        controller: 'SingleQuestionController'
+        controllerAs: 'vm'
 
     $urlRouterProvider.otherwise '/'

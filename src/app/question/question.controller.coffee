@@ -1,5 +1,5 @@
 angular.module 'monterailApp'
-  .controller 'MainController', () ->
+  .controller 'SingleQuestionController', () ->
     'ngInject'
     vm = this
     

@@ -1,17 +1,69 @@
-.acme-navbar-text{
-  color: white;
-}
+nav {
+	background-color: $base-color;
+	width: 100%;
+	position: relative;
+	
+	.fa-chevron-left {
+		position: absolute;
+		height: 40px;
+		width: 40px;
+		margin-left: 20px;
+		padding-top: 6px;
+		padding-left: 8px;
+		border: 2px solid $gray;
+		border-radius: 50%;
+		&:before {
+			font-size: 1.5em;
+			color: $gray;
+			//content: "<";
+		}
+		
 
-a {
-  color: black;
-}
+	}
 
-h1 {
-  font-size: 2em;
-  margin: 0;
-  line-height: 1.25em;
-}
+	.head {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 20px;
+		@media (max-width: 1080px) {
+			padding: 0 20px 0 80px;
+		}
+		
+	}
+	.add {
+		font-size: 2em;
+	}
+	.fa-plus-circle {
+		color: $blue-text;
+		font-size: 1.0em;
 
-a:hover, a:focus {
-  color: greenyellow;
+		@media (max-width: $phone-breakout) {
+			position: absolute;
+			right: 20px;
+			top: 5px;
+		}
+
+		
+	}
+	.options {
+		display: flex;
+		align-items: center;
+		@media (max-width: $phone-breakout) {
+			display: none;
+		}
+	}
+
+	.select {
+		margin-right: 30px;
+
+		input[type="radio"] {
+			margin-left: 20px;
+		}
+	}
+
+	.sort {
+		margin-left: 20px;
+	}
+
+	
 }
