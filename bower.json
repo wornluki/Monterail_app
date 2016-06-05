@@ -20,7 +20,8 @@
     "normalize-scss": "normalize.scss#^5.0.3",
     "components-font-awesome": "^4.6.3",
     "restangular": "^1.5.2",
-    "angular-relative-date": "^2.0.0"
+    "angular-relative-date": "^2.0.0",
+    "font-awesome": "^4.6.3"
   },
   "devDependencies": {
     "angular-mocks": "~1.5.3"

@@ -20,9 +20,11 @@ $phone-breakout: 425px;
 
 body {
 	margin: 0;
-	font-family: "HelveticaNeue-CondensedBold", Arial
+	font-family: "Agfa Rotis", Arial
 }
-
+@include font-face("Agfa Rotis", "../assets/fonts/Agfa-Rotis", $file-formats: eot ttf svg woff);
+@include font-face("Agfa Rotis", "../assets/fonts/Agfa-Rotis-bold", bold, $file-formats: eot ttf svg woff);
+@include font-face("Agfa Rotis", "../assets/fonts/Agfa-Rotis-italic", normal, italic, $file-formats: eot ttf svg woff);
 
 
 .wrapper {

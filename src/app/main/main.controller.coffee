@@ -34,7 +34,7 @@ angular.module 'monterailApp'
 
 
     getData()
-
+    vm.predicate = ""
     vm.order = order
     vm.removeCustomClass = removeCustomClass
     vm.addCustomClass = addCustomClass
