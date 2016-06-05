@@ -35,7 +35,7 @@ Search is using angular filter. Works fine.
 
 Voting system also works fine besides stop voting more than one. I will repair this bug as soon as possible.
 
-**Task 8: Add routing**
+**Task 8: Add routing** (✓)
 
 Everything works in SPA. Uses UIRouter
 
