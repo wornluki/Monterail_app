@@ -1,0 +1,82 @@
+<navbar></navbar>
+
+<div class="wrapper">
+  <div class="box">
+    <div class="question">
+      <div class="single_question_person">
+        <div class="user_box">
+          <img class="image" ng-src="{{vmQ.question.author.avatar}}">
+          <div class="text">
+            <div class="author_box">
+              <span class="author">{{vmQ.question.author.name}}</span>
+              <span class="gray">IS ASKING</span>
+            </div>
+            <span class="title">{{vmQ.question.title}}</span>
+          </div>
+        </div>
+
+        <div class="unfollow">UNFOLLOW</div>
+
+      </div>
+    </div>
+    <div class="question_body">
+      <div class="question_header">
+
+        <div class="answers">
+          <div class="asked">
+            <hr>
+            <span>ASKED</span>
+          </div>
+          <div class="question_text">
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+          </div>
+          <div class="votes_wrap">
+            <span>{{vmQ.question.votes}} votes</span>
+            <div class="votes">
+              <button class="fa fa-chevron-up" ng-click="vmQ.upvote(vmQ.question)" ng-disabled="vmQ.buttonClicked == true"></button>
+              <button class="fa fa-chevron-down" ng-click="vmQ.downvote(vmQ.question)" ng-disabled="vmQ.buttonClicked == true"></button>
+            </div>
+          </div>
+        </div>
+        <div class="add_answer">ADD NEW ANSWER</div>
+      </div>
+    </div>
+
+  </div>
+  <span class="answer_count">2 peers already answered Eva</span>
+  <div class="answer_box_wrap" ng-repeat="answer in vmQ.question.answers">
+    <div class="answer_box">
+      <div class="avatar">
+        <img class="image" ng-click="vmQ.removeCustomClass(); vmQ.getUser(answer.user)" ng-src="{{answer.user.avatar}}">
+      </div>
+      <div class="answer_wrap">
+        <div class="answer_author">
+          <span class="user_name">{{answer.user.name}}</span> COMMENTED IT &bull; {{answer.added | relativeDate}}
+        </div>
+        <div class="answer_text">
+          {{answer.text}}
+        </div>
+
+
+      </div>
+      <div class="votes_wrap">
+        <span>{{answer.votes}} votes</span>
+        <div class="votes">
+          <button class="fa fa-chevron-up" ng-click="vmQ.upvote(answer)" ng-disabled="vmQ.buttonClicked == true"></button>
+          <button class="fa fa-chevron-down" ng-click="vmQ.downvote(answer)" ng-disabled="vmQ.buttonClicked == true"></button>
+        </div>
+      </div>
+
+    </div>
+    <div class="add_answer">COMMENT</div>
+  </div>
+
+
+</div>
+
+<user-modal></user-modal>

@@ -1,7 +1,7 @@
 angular.module 'monterailApp'
   .directive 'userModal', ->
 
-    UserModalController = (moment) ->
+    UserModalController = (data) ->
       'ngInject'
       vm = this
       # "vm.creationDate" is available by directive option "bindToController: true"
@@ -12,5 +12,5 @@ angular.module 'monterailApp'
       restrict: 'E'
       templateUrl: 'app/components/userModal/userModal.html'
       controller: UserModalController
-      controllerAs: 'vm'
+      controllerAs: 'modal'
       bindToController: true

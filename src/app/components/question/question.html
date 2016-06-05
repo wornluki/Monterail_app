@@ -1,18 +1,19 @@
+
 <div class="wrapper">
-  <div class="questions">
+  <div class="questions" ng-repeat="question in main.data.questions | filter: query | limitTo : vm.limit | orderBy : predicate">
     <div class="question">
       <div class="question_person">
-        <img class- "image" src="https://randomuser.me/api/portraits/women/0.jpg">
+        <img class="image" ng-click="main.removeCustomClass(); vm.getUser(question.author)" ng-src="{{question.author.avatar}}">
         <div class="text">
           <div class="author_box">
-            <span class="author">Eva</span>
+            <span class="author" ng-click="main.removeCustomClass(); vm.getUser(question.author)">{{ question.author.username }}</span>
             <span class="gray">IS ASKING</span>
           </div>
-          <span class="title">Will inslulin make my patient gain weight?</span>
+          <span class="title" ui-sref="question({id: question.id})">{{question.title}}</span>
         </div>
 
       </div>
-    </div>
+
     <div class="question_body">
       <div class="question_header">
 
@@ -21,49 +22,31 @@
             <hr>
             <span>ASKED</span>
           </div>
-          <div class="answer more">
-            <span class="number">3</span>
+          <div class="answer more" ng-class="{'hide' : question.answers.length < 5 }">
+            <span class="number">{{ question.answers.length - 4 }}</span>
             <div class="bottom">
               <span>more <br>activites</span>
             </div>
           </div>
-          <div class="answer">
-            <img src="https://randomuser.me/api/portraits/med/men/82.jpg">
+
+          <div class="answer" ng-repeat="answer in question.answers | limitTo : 4 ">
+            <img ng-src="{{ answer.user.avatar }}">
             <div class="bottom">
               <hr>
-              <span class="status">Commented</span>
-            </div>
-          </div>
-          <div class="answer">
-            <img src="https://randomuser.me/api/portraits/med/men/82.jpg">
-            <div class="bottom">
-              <hr>
-              <span class="status">Commented</span>
-            </div>
-          </div>
-          <div class="answer">
-            <img src="https://randomuser.me/api/portraits/med/men/82.jpg">
-            <div class="bottom">
-              <hr>
-              <span class="status">Commented</span>
-            </div>
-          </div>
-          <div class="answer">
-            <img src="https://randomuser.me/api/portraits/med/men/82.jpg">
-            <div class="bottom">
-              <hr>
-              <span class="status">Commented</span>
+              <span class="status" ng-class="{'answered' : answer.user.status == 'answered'}">{{answer.user.status}}</span>
             </div>
           </div>
         </div>
       </div>
       <div class="question_additional__info">
         <ul>
-          <li>Related disc</li>
-          <li>3 peers involved</li>
-          <li>3 conv</li>
+          <li>{{question.related}} Related disc</li>
+          <li>{{question.peers_involved}} peers involved</li>
+          <li>{{question.conversations}} conversations</li>
         </ul>
+      </div>
       </div>
     </div>
   </div>
+  <span class="load_more" ng-click="vm.addQuestions()">Load more question</span>
 </div>

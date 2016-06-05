@@ -3,18 +3,21 @@
   <div class="wrapper">
     <div class="head">
       <div class="add">
-        <span class="logo">QUESTIONS</span>
+        <span class="logo" ui-sref="home">QUESTIONS</span>
         <span class="fa fa-plus-circle"></span>
       </div>
-      <div class="options">
+      <div ng-show={{vm.state}} class="last_disussed">
+        Last discussed {{vmQ.lastItemAdded | relativeDate}}
+      </div>
+      <div class="options" ng-hide="{{vm.state}}">
         <div class="select">
           <input type="radio"> My shelf
           <input type="radio"> All questions
         </div>
         <div class="sort">
-          Sort by: recent or hot
+          Sort by: <span ng-click="main.order('added')">recent</span> or <span ng-click="main.order('conversations')">hot</span>
         </div>
-      </div> 
+      </div>
     </div>
   </div>
 </nav>

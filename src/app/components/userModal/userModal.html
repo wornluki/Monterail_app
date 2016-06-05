@@ -1,17 +1,17 @@
 <div class="add_panel_background hidden" id="panel">
   <div class="add_form">
-    <span class="fa fa-times" ng-click="vm.addCustomClass()"></span>
+    <span class="fa fa-times" ng-click="main.addCustomClass(); vmQ.addCustomClass()"></span>
     <div class="add_panel_wrapper">
       <div class="header">
-      <img class="author_img" src="https://randomuser.me/api/portraits/men/81.jpg">
-      <span class="author">Dr. Halima</span>
+      <img class="author_img" ng-src="{{vm.user.avatar}}">
+      <span class="author">{{vm.user.name}}</span>
       <div class="info_about_user">
-        <span class="info_text">MEMBER FOR 5 months</span>
+        <span class="info_text">MEMBER FOR {{vm.register_date | relativeDate}}</span>
         <span class="info_text">LAST SEEN Saturday afternoon</span>
         <span class="info_text">ACTIVITY LEVEL
-          <span class="fa fa-certificate gain"></span>
-          <span class="fa fa-certificate gain"></span>
-          <span class="fa fa-certificate"></span>
+          <span class="fa fa-certificate" ng-class="{'gain' : vm.user.activity_level >= 1 }"></span>
+          <span class="fa fa-certificate" ng-class="{'gain' : vm.user.activity_level >= 2 }"></span>
+          <span class="fa fa-certificate" ng-class="{'gain' : vm.user.activity_level >= 3 }"></span>
         </span>
       </div>
     </div>
@@ -23,23 +23,23 @@
       </div>
 
       <span class="desc">
-        That's where we have been these 5 months ago
+        That's where we have been these {{vm.register_date | relativeDate}}
       </span>
 
       <div class="amounts">
-        <div class="box 45">
+        <div class="box box45">
           <div class="numbers">46</div>
           <div class="box_desc">peers</div>
         </div>
-        <div class="box 45">
+        <div class="box30">
           <div class="numbers">46</div>
           <div class="box_desc">peers</div>
         </div>
-        <div class="box 45">
+        <div class="box15">
           <div class="numbers">46</div>
           <div class="box_desc">peers</div>
         </div>
-        <div class="box 45">
+        <div class="box60">
           <div class="numbers">46</div>
           <div class="box_desc">peers</div>
         </div>
@@ -69,7 +69,7 @@
           <span class="name">S.E.N. Waweru</span>
         </div>
       </div>
-      
+
       <span class="desc">
         The hottest discussion these days
       </span>
@@ -87,10 +87,10 @@
           </div>
         </div>
       </div>
-      
+
 
     </div>
     </div>
-    
+
   </div>
 </div>

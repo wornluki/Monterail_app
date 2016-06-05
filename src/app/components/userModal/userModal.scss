@@ -1,17 +1,24 @@
-
+@keyframes show {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 
 .add_panel_background {
 	width: 100vw;
 	height: 100%;
 	top: 0;
 	left: 0;
-	position: absolute;
+	position: fixed;
 	background-color: rgba(0,0,0, 0.7);
 	z-index:1;
 
 
 	&.hidden {
-		display: none;	
+		display: none;
 	}
 }
 
@@ -139,30 +146,30 @@
 		justify-content: space-around;
 	}
 
-	.box {
-		margin: 50px 0;
-		position: relative;
-		&:before {
-			content: "";
-		    position: absolute;
-		    background-color: $accent-color;
-		    width: 100px;
-		    height: 100px;
-		    top: -50%;
-		    left: -87.5%;
-		    z-index: -1;
-		    transform: rotate(30deg);
-		    
-		}
-	}
-	
-	// $dag_list: 45 30 18 67;
 
-	// @each $var in $dag_list {
-	// 	.box:before#{$var} {
-	// 		transform: rotate($var deg);
-	// 	}
-	// }
+
+	$dag_list: 45 30 15 60;
+
+	@each $var in $dag_list {
+    .box#{$var}{
+  		margin: 50px 0;
+  		position: relative;
+
+
+  		&:before {
+  			content: "";
+  		    position: absolute;
+  		    background-color: $accent-color;
+  		    width: 100px;
+  		    height: 100px;
+  		    top: -50%;
+  		    left: -87.5%;
+  		    z-index: -1;
+  		    transform: rotate($var+deg);
+
+  		}
+  	}
+	}
 
 	.numbers {
 		font-size: 1.5em;

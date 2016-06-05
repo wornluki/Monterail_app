@@ -1,8 +1,9 @@
 nav {
 	background-color: $base-color;
 	width: 100%;
+	margin-bottom: 20px;
 	position: relative;
-	
+
 	.fa-chevron-left {
 		position: absolute;
 		height: 40px;
@@ -17,7 +18,7 @@ nav {
 			color: $gray;
 			//content: "<";
 		}
-		
+
 
 	}
 
@@ -28,7 +29,7 @@ nav {
 		@media (max-width: 1080px) {
 			padding: 0 20px 0 80px;
 		}
-		
+
 	}
 	.add {
 		font-size: 2em;
@@ -43,7 +44,7 @@ nav {
 			top: 5px;
 		}
 
-		
+
 	}
 	.options {
 		display: flex;
@@ -65,5 +66,5 @@ nav {
 		margin-left: 20px;
 	}
 
-	
+
 }

@@ -1,5 +1,5 @@
 angular.module 'monterailApp'
-  .config ($logProvider, toastrConfig) ->
+  .config ($logProvider, toastrConfig, RestangularProvider) ->
     'ngInject'
     # Enable log
     $logProvider.debugEnabled true
@@ -9,3 +9,5 @@ angular.module 'monterailApp'
     toastrConfig.positionClass = 'toast-top-right'
     toastrConfig.preventDuplicates = true
     toastrConfig.progressBar = true
+
+    RestangularProvider.setBaseUrl('http://localhost:3002')

@@ -29,7 +29,7 @@ body {
 	width: 960px;
 	margin: 0 auto;
 	@media (max-width: $tablet-breakout) {
-		width: 100vw;	
+		width: 100vw;
 	}
 }
 
@@ -38,58 +38,15 @@ img {
 	border-radius: 50%;
 }
 
-
-
-
-
-
-.votes_wrap {
-	width: 50vw;
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
+button {
+	border: none;
+	padding: 0;
+	background-color: white;
 }
 
-.votes {
-	display: flex;
-	flex-direction: column;
-}
 
-.question_text {
-	padding: 20px;
-}
 
-.single_question_person {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px;
-  height: 80px;
-  position: relative;
-  .text {
-    padding-left: 20px;
-  }
-  .user_box {
-  	display: flex;
-  }
 
-}
-
-.box {
-	border: 1px solid $gray;
-}
-
-.add_answer {
-	border: 1px solid $darken_gray;
-	padding: 5px;
-	width: 180px;
-	height: 30px;
-	left: calc(50% - 50px);
-	margin-top: -15px;
-	position: absolute;
-	z-index: 1;
-	background-color: $base-color;
-}
 
 
 

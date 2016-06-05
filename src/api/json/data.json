@@ -1,0 +1,298 @@
+{
+  "questions": [
+      {
+          "id":"1",
+          "title": "Will insulin get my patient weight?",
+          "author": {
+               "userId": 1,
+               "name": "Halina",
+               "username": "Halina",
+               "register_date": "2016-01-01T23:28:56.782Z",
+               "activity_level": 2,
+               "email": "halina@gmail.com",
+               "avatar": "https://randomuser.me/api/portraits/women/12.jpg"
+            },
+          "votes": 17,
+          "related": 3,
+          "peers_involved": 2,
+          "conversations": 5,
+          "added": "2014-01-01T23:28:56.782Z",
+          "answers": [
+
+              {
+                  "answerId": 1,
+                  "added": "2015-04-29T18:25:43.511Z",
+                  "votes": 1,
+                  "user": {
+                      "name": "Marko",
+                      "register_date": "2016-01-01T23:28:56.782Z",
+                      "activity_level": 2,
+                      "status" : "answered",
+                      "avatar": "https://randomuser.me/api/portraits/men/81.jpg"
+                    },
+                  "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit sit itaque unde, expedita quisquam sunt doloremque maxime labore aliquam inventore numquam aliquid quos alias placeat. Accusamus officiis nulla dolores cumque?"
+              },
+              {
+                  "answerId": 2,
+                  "added": "2016-02-29T18:25:43.511Z",
+                  "votes": 1,
+                  "user": {
+                      "name": "Marko",
+                      "register_date": "2016-01-01T23:28:56.782Z",
+                      "activity_level": 2,
+                      "status" : "commented",
+                      "avatar": "https://randomuser.me/api/portraits/men/82.jpg"
+                    },
+                  "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit sit itaque unde, expedita quisquam sunt doloremque maxime labore aliquam inventore numquam aliquid quos alias placeat. Accusamus officiis nulla dolores cumque?"
+              },
+              {
+                  "answerId": 3,
+                  "added": "2016-01-29T18:25:43.511Z",
+                  "votes": 1,
+                  "user": {
+                      "name": "Marko",
+                      "register_date": "2016-01-01T23:28:56.782Z",
+                      "activity_level": 2,
+                      "status" : "commented",
+                      "avatar": "https://randomuser.me/api/portraits/men/83.jpg"
+                    },
+                  "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit sit itaque unde, expedita quisquam sunt doloremque maxime labore aliquam inventore numquam aliquid quos alias placeat. Accusamus officiis nulla dolores cumque?"
+              },
+              {
+                  "answerId": 4,
+                  "added": "2016-06-04T18:25:43.511Z",
+                  "votes": 1,
+                  "user": {
+                      "name": "Marko",
+                      "register_date": "2016-01-01T23:28:56.782Z",
+                      "activity_level": 2,
+                      "status" : "commented",
+                      "avatar": "https://randomuser.me/api/portraits/men/84.jpg"
+                    },
+                  "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit sit itaque unde, expedita quisquam sunt doloremque maxime labore aliquam inventore numquam aliquid quos alias placeat. Accusamus officiis nulla dolores cumque?"
+              },
+              {
+                  "answerId": 5,
+                  "added": "2016-04-29T18:25:43.511Z",
+                  "votes": 1,
+                  "user": {
+                      "name": "Marko",
+                      "register_date": "2016-01-01T23:28:56.782Z",
+                      "activity_level": 2,
+                      "status" : "commented",
+                      "avatar": "https://randomuser.me/api/portraits/men/85.jpg"
+                    },
+                  "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit sit itaque unde, expedita quisquam sunt doloremque maxime labore aliquam inventore numquam aliquid quos alias placeat. Accusamus officiis nulla dolores cumque?"
+              }
+            ]
+          },
+
+            {
+                "id":"2",
+                "title": "Vegan diet in diabetes treatment?",
+                "author": {
+                     "userId": 1,
+                     "name": "Dr Halma",
+                     "username": "Dr Halma",
+                     "register_date": "2015-01-01T23:28:56.782Z",
+                     "activity_level": 3,
+                     "email": "halina@gmail.com",
+                     "avatar": "https://randomuser.me/api/portraits/women/13.jpg"
+                  },
+                "votes": 9,
+                "related": 3,
+                "peers_involved": 6,
+                "conversations": 1,
+                "added": "2012-04-23T18:25:43.511Z",
+                "answers": [
+
+                    {
+                        "answerId": 1,
+                        "votes": 1,
+                        "user": {
+                            "userId": "1",
+                            "name": "John",
+                            "register_date": "2016-01-01T23:28:56.782Z",
+                            "activity_level": 2,
+                            "status" : "answered",
+                            "avatar": "https://randomuser.me/api/portraits/men/81.jpg"
+                          },
+                        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit sit itaque unde, expedita quisquam sunt doloremque maxime labore aliquam inventore numquam aliquid quos alias placeat. Accusamus officiis nulla dolores cumque?"
+                    },
+                    {
+                        "answerId": 2,
+                        "votes": 1,
+                        "user": {
+                            "userId": "2",
+                            "name": "Mark",
+                            "register_date": "2016-01-01T23:28:56.782Z",
+                            "activity_level": 2,
+                            "status" : "commented",
+                            "avatar": "https://randomuser.me/api/portraits/men/82.jpg"
+                          },
+                        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit sit itaque unde, expedita quisquam sunt doloremque maxime labore aliquam inventore numquam aliquid quos alias placeat. Accusamus officiis nulla dolores cumque?"
+                    },
+                    {
+                        "answerId": 3,
+                        "votes": 1,
+                        "user": {
+                            "userId": "3",
+                            "name": "Marko",
+                            "register_date": "2016-01-01T23:28:56.782Z",
+                            "activity_level": 2,
+                            "status" : "commented",
+                            "avatar": "https://randomuser.me/api/portraits/men/83.jpg"
+                          },
+                        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit sit itaque unde, expedita quisquam sunt doloremque maxime labore aliquam inventore numquam aliquid quos alias placeat. Accusamus officiis nulla dolores cumque?"
+                    }
+                  ]
+                },
+                  {
+                      "id":"3",
+                      "title": "Vegan diet to stop diabetes progress",
+                      "author": {
+                           "userId": 1,
+                           "name": "Halina",
+                           "username": "Halina",
+                           "email": "halina@gmail.com",
+                           "avatar": "https://randomuser.me/api/portraits/women/12.jpg"
+                        },
+                      "votes": 19,
+                      "related": 3,
+                      "peers_involved": 3,
+                      "conversations": 4,
+                      "added": "2016-04-29T18:25:43.511Z",
+                      "answers": [
+
+                          {
+                              "answerId": 1,
+                              "user": {
+                                  "userId": "1",
+                                  "name": "John",
+                                  "register_date": "2016-01-01T23:28:56.782Z",
+                                  "activity_level": 1,
+                                  "status" : "answered",
+                                  "avatar": "https://randomuser.me/api/portraits/men/81.jpg"
+                                },
+                              "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit sit itaque unde, expedita quisquam sunt doloremque maxime labore aliquam inventore numquam aliquid quos alias placeat. Accusamus officiis nulla dolores cumque?"
+                          },
+                          {
+                              "answerId": 2,
+                              "user": {
+                                  "userId": "2",
+                                  "name": "Mark",
+                                  "register_date": "2016-01-01T23:28:56.782Z",
+                                  "activity_level": 2,
+                                  "status" : "commented",
+                                  "avatar": "https://randomuser.me/api/portraits/men/82.jpg"
+                                },
+                              "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit sit itaque unde, expedita quisquam sunt doloremque maxime labore aliquam inventore numquam aliquid quos alias placeat. Accusamus officiis nulla dolores cumque?"
+                          },
+                          {
+                              "answerId": 3,
+                              "user": {
+                                  "userId": "3",
+                                  "name": "Marko",
+                                  "register_date": "2016-01-01T23:28:56.782Z",
+                                  "activity_level": 1,
+                                  "status" : "commented",
+                                  "avatar": "https://randomuser.me/api/portraits/men/83.jpg"
+                                },
+                              "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit sit itaque unde, expedita quisquam sunt doloremque maxime labore aliquam inventore numquam aliquid quos alias placeat. Accusamus officiis nulla dolores cumque?"
+                          },
+                          {
+                              "answerId": 4,
+                              "user": {
+                                  "userId": "4",
+                                  "name": "Marko",
+                                  "register_date": "2016-01-01T23:28:56.782Z",
+                                  "activity_level": 1,
+                                  "status" : "commented",
+                                  "avatar": "https://randomuser.me/api/portraits/men/83.jpg"
+                                },
+                              "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit sit itaque unde, expedita quisquam sunt doloremque maxime labore aliquam inventore numquam aliquid quos alias placeat. Accusamus officiis nulla dolores cumque?"
+                          },
+                          {
+                              "answerId": 5,
+                              "user": {
+                                  "userId": "5",
+                                  "name": "Marko",
+                                  "register_date": "2016-01-01T23:28:56.782Z",
+                                  "activity_level": 1,
+                                  "status" : "commented",
+                                  "avatar": "https://randomuser.me/api/portraits/men/83.jpg"
+                                },
+                              "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit sit itaque unde, expedita quisquam sunt doloremque maxime labore aliquam inventore numquam aliquid quos alias placeat. Accusamus officiis nulla dolores cumque?"
+                          },
+                          {
+                              "answerId": 6,
+                              "user": {
+                                  "userId": "6",
+                                  "name": "Marko",
+                                  "register_date": "2016-01-01T23:28:56.782Z",
+                                  "activity_level": 1,
+                                  "status" : "commented",
+                                  "avatar": "https://randomuser.me/api/portraits/men/83.jpg"
+                                },
+                              "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit sit itaque unde, expedita quisquam sunt doloremque maxime labore aliquam inventore numquam aliquid quos alias placeat. Accusamus officiis nulla dolores cumque?"
+                          }
+                        ]
+                      },
+                      {
+                          "id":"4",
+                          "title": "Vegan diet in diabetes treatment?",
+                          "author": {
+                               "userId": 1,
+                               "name": "Halina",
+                               "username": "Halina",
+                               "email": "halina@gmail.com",
+                               "avatar": "https://randomuser.me/api/portraits/women/12.jpg"
+                            },
+                          "votes": 19,
+                          "related": 3,
+                          "peers_involved": 6,
+                          "conversations": 3,
+                          "added": "2015-04-23T18:25:43.511Z",
+                          "answers": [
+
+                              {
+                                  "answerId": 1,
+                                  "user": {
+                                      "userId": "1",
+                                      "name": "John",
+                                      "register_date": "2016-01-01T23:28:56.782Z",
+                                      "activity_level": 2,
+                                      "status" : "answered",
+                                      "avatar": "https://randomuser.me/api/portraits/men/81.jpg"
+                                    },
+                                  "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit sit itaque unde, expedita quisquam sunt doloremque maxime labore aliquam inventore numquam aliquid quos alias placeat. Accusamus officiis nulla dolores cumque?"
+                              },
+                              {
+                                  "answerId": 2,
+                                  "user": {
+                                      "userId": "2",
+                                      "name": "Mark",
+                                      "register_date": "2016-01-01T23:28:56.782Z",
+                                      "activity_level": 2,
+                                      "status" : "commented",
+                                      "avatar": "https://randomuser.me/api/portraits/men/82.jpg"
+                                    },
+                                  "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit sit itaque unde, expedita quisquam sunt doloremque maxime labore aliquam inventore numquam aliquid quos alias placeat. Accusamus officiis nulla dolores cumque?"
+                              },
+                              {
+                                  "answerId": 3,
+                                  "user": {
+                                      "userId": "3",
+                                      "name": "Marko",
+                                      "register_date": "2016-01-01T23:28:56.782Z",
+                                      "activity_level": 1,
+                                      "status" : "commented",
+                                      "avatar": "https://randomuser.me/api/portraits/men/83.jpg"
+                                    },
+                                  "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit sit itaque unde, expedita quisquam sunt doloremque maxime labore aliquam inventore numquam aliquid quos alias placeat. Accusamus officiis nulla dolores cumque?"
+                              }
+                            ]
+                          }
+    ]
+
+  }
