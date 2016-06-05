@@ -21,7 +21,7 @@ Connect user to modal works fine. Nothing to say more :)
 
 **Task 4: Use templates** (✓)
 
-Most data is dynamic. A little of data is still static but it will be no problem to make them dynamic. I would need some time to model data.
+Most data is dynamic. A little of data is still static but it will be no problem to make them dynamic. I would need some time to model data. Data is serve from file.
 
 **Task 5: Add pagination and sorting** (✓)
 
@@ -43,4 +43,4 @@ Everything works in SPA. Uses UIRouter
 
 You can look into source files on this github repo.
 
-App is also available on heroku: 
+I know some of code need refactoring and I will be refactor that in near future.
