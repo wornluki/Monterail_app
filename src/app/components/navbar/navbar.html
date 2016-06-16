@@ -6,7 +6,7 @@
         <span class="logo" ui-sref="home">QUESTIONS</span>
         <span class="fa fa-plus-circle"></span>
       </div>
-      <div ng-show={{vm.state}} class="last_disussed">
+      <div ng-show="{{vm.state}}" class="last_disussed">
         Last discussed {{vmQ.lastItemAdded | relativeDate}}
       </div>
       <div class="options" ng-hide="{{vm.state}}">

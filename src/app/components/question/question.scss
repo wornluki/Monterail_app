@@ -3,6 +3,8 @@ img {
   width: 50px;
   height: 50px;
   border-radius: 50%;
+  outline: none;
+  cursor: pointer;
 }
 
 hr {
@@ -73,6 +75,8 @@ li {
   .author {
     font-size: 1.2em;
     color: $blue-text;
+    cursor: pointer;
+
   }
   .gray {
     color: $text-color;

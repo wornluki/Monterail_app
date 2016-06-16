@@ -11,12 +11,16 @@
 	.fa {
 		padding: 20px 0;
 	}
+	a{
+		cursor: pointer;
+	}
 }
 
 .question_text {
 	padding: 20px;
-
 }
+
+
 
 .single_question_person {
   display: flex;
@@ -31,6 +35,9 @@
   .user_box {
   	display: flex;
   }
+	.author {
+		cursor: pointer;
+	}
 
 }
 
@@ -54,6 +61,7 @@
 	margin-top: -15px;
 	position: absolute;
 	z-index: 1;
+	cursor: pointer;
 	background-color: $base-color;
 }
 

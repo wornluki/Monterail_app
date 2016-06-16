@@ -5,10 +5,12 @@
     <div class="question">
       <div class="single_question_person">
         <div class="user_box">
-          <img class="image" ng-src="{{vmQ.question.author.avatar}}">
+          <a>
+            <img class="image" ng-click="vmQ.showUserModal = !showUserModal; modal.getUser(vmQ.question.author)" ng-src="{{vmQ.question.author.avatar}}">
+          </a>
           <div class="text">
             <div class="author_box">
-              <span class="author">{{vmQ.question.author.name}}</span>
+              <a class="author" ng-click="vmQ.showUserModal = !showUserModal; modal.getUser(vmQ.question.author)">{{vmQ.question.author.name}}</a>
               <span class="gray">IS ASKING</span>
             </div>
             <span class="title">{{vmQ.question.title}}</span>
@@ -38,8 +40,8 @@
           <div class="votes_wrap">
             <span>{{vmQ.question.votes}} votes</span>
             <div class="votes">
-              <button class="fa fa-chevron-up" ng-click="vmQ.upvote(vmQ.question)" ng-disabled="vmQ.buttonClicked == true"></button>
-              <button class="fa fa-chevron-down" ng-click="vmQ.downvote(vmQ.question)" ng-disabled="vmQ.buttonClicked == true"></button>
+              <a class="fa fa-chevron-up" ng-click="vmQ.upvote(vmQ.question)" ng-disabled="vmQ.buttonClicked == true"></a>
+              <a class="fa fa-chevron-down" ng-click="vmQ.downvote(vmQ.question)" ng-disabled="vmQ.buttonClicked == true"></a>
             </div>
           </div>
         </div>
@@ -52,7 +54,7 @@
   <div class="answer_box_wrap" ng-repeat="answer in vmQ.question.answers">
     <div class="answer_box">
       <div class="avatar">
-        <img class="image" ng-click="vmQ.removeCustomClass(); vmQ.getUser(answer.user)" ng-src="{{answer.user.avatar}}">
+        <img class="image" ng-click="vmQ.showUserModal = !showUserModal; modal.getUser(answer.user)" ng-src="{{answer.user.avatar}}">
       </div>
       <div class="answer_wrap">
         <div class="answer_author">
@@ -67,8 +69,8 @@
       <div class="votes_wrap">
         <span>{{answer.votes}} votes</span>
         <div class="votes">
-          <button class="fa fa-chevron-up" ng-click="vmQ.upvote(answer)" ng-disabled="vmQ.buttonClicked == true"></button>
-          <button class="fa fa-chevron-down" ng-click="vmQ.downvote(answer)" ng-disabled="vmQ.buttonClicked == true"></button>
+          <a class="fa fa-chevron-up" ng-click="vmQ.upvote(answer)" ng-disabled="vmQ.buttonClicked == true"></a>
+          <a class="fa fa-chevron-down" ng-click="vmQ.downvote(answer)" ng-disabled="vmQ.buttonClicked == true"></a>
         </div>
       </div>
 

@@ -7,18 +7,21 @@ angular.module 'monterailApp'
 
 
       getUser = (data_user) ->
-        vm.user = data_user
-        console.log vm.user
-        vm.register_date = new Date(Date.parse(vm.user.register_date))
-        console.log vm.register_date
-        vm.user
+        vm.user = data.getUser(data_user)
+        #console.log vm.user
+
+        # vm.user = data_user
+        # console.log vm.user
+        # vm.register_date = new Date(Date.parse(vm.user.register_date))
+        # console.log vm.register_date
+        # vm.user
 
 
       addQuestions = ->
         vm.limit += 5
         console.log vm.limit
 
-      data.user = vm.user
+      # data.user = vm.user
       vm.user = []
       vm.limit = 2
       vm.getUser = getUser

@@ -1,21 +1,29 @@
 angular.module 'monterailApp'
-  .service 'data', ($http) ->
+  .factory 'data', ($http) ->
     'ngInject'
 
     #Usualy I used Restangular but serve data from file will be better for this fast example
 
     api = 'http://localhost:3000/api/json/data.json'
-    user = []
+    userS = []
 
 
     getData = () ->
       $http.get(api)
 
 
+    getUser = (user) ->
+
+      userS = user
+      console.log userS
+      userS
 
 
 
-    @getData = getData
-    #@getQuestion = getQuestion
 
-    return
+
+
+    service =
+      getUser: getUser,
+      getData: getData,
+      userS: userS

@@ -1,17 +1,17 @@
-<div class="add_panel_background hidden" id="panel">
+<div class="add_panel_background" ng-show="vm.showUserModal || vmQ.showUserModal">
   <div class="add_form">
-    <span class="fa fa-times" ng-click="main.addCustomClass(); vmQ.addCustomClass()"></span>
+    <span class="fa fa-times" ng-click="vm.showUserModal = false; vmQ.showUserModal = false"></span>
     <div class="add_panel_wrapper">
       <div class="header">
-      <img class="author_img" ng-src="{{vm.user.avatar}}">
-      <span class="author">{{vm.user.name}}</span>
+      <img class="author_img" ng-src="{{modal.user.avatar}}">
+      <span class="author">{{modal.user.name}}</span>
       <div class="info_about_user">
-        <span class="info_text">MEMBER FOR {{vm.register_date | relativeDate}}</span>
+        <span class="info_text">MEMBER FOR {{modal.register_date | relativeDate}}</span>
         <span class="info_text">LAST SEEN Saturday afternoon</span>
         <span class="info_text">ACTIVITY LEVEL
-          <span class="fa fa-certificate" ng-class="{'gain' : vm.user.activity_level >= 1 }"></span>
-          <span class="fa fa-certificate" ng-class="{'gain' : vm.user.activity_level >= 2 }"></span>
-          <span class="fa fa-certificate" ng-class="{'gain' : vm.user.activity_level >= 3 }"></span>
+          <span class="fa fa-certificate" ng-class="{'gain' : modal.user.activity_level >= 1 }"></span>
+          <span class="fa fa-certificate" ng-class="{'gain' : modal.user.activity_level >= 2 }"></span>
+          <span class="fa fa-certificate" ng-class="{'gain' : modal.user.activity_level >= 3 }"></span>
         </span>
       </div>
     </div>
@@ -23,7 +23,7 @@
       </div>
 
       <span class="desc">
-        That's where we have been these {{vm.register_date | relativeDate}}
+        That's where we have been these {{modal.register_date | relativeDate}}
       </span>
 
       <div class="amounts">

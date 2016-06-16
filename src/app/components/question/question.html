@@ -1,12 +1,12 @@
 
-<div class="wrapper">
+<div class="wrapper" ng-init="vm.showUserModal = false">
   <div class="questions" ng-repeat="question in main.data.questions | filter: query | limitTo : vm.limit | orderBy : predicate">
     <div class="question">
       <div class="question_person">
-        <img class="image" ng-click="main.removeCustomClass(); vm.getUser(question.author)" ng-src="{{question.author.avatar}}">
+        <a><img class="image" ng-click="vm.showUserModal = !showUserModal; modal.getUser(question.author)" ng-src="{{question.author.avatar}}"></a>
         <div class="text">
           <div class="author_box">
-            <span class="author" ng-click="main.removeCustomClass(); vm.getUser(question.author)">{{ question.author.username }}</span>
+            <a class="author" ng-click="vm.showUserModal = !showUserModal; vm.getUser(question.author); modal.getUser(question.author)">{{ question.author.username }}</a>
             <span class="gray">IS ASKING</span>
           </div>
           <span class="title" ui-sref="question({id: question.id})">{{question.title}}</span>

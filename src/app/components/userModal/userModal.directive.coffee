@@ -1,11 +1,16 @@
 angular.module 'monterailApp'
   .directive 'userModal', ->
 
-    UserModalController = (data) ->
+    UserModalController = (data, $scope) ->
       'ngInject'
-      vm = this
-      # "vm.creationDate" is available by directive option "bindToController: true"
-      # vm.relativeDate = moment(vm.creationDate).fromNow()
+      modal = this
+      modal.user = []
+
+      getUser = (user) ->
+        modal.user = user
+        console.log modal.user
+
+      modal.getUser = getUser
       return
 
     directive =
